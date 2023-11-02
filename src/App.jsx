@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { getData } from "./data";
+import Animal from "./components/Animal";
 
 import "./App.css";
 
@@ -46,12 +47,7 @@ function App() {
         </thead>
         <tbody>
           {filtered.map((ani) => (
-            <tr>
-              <td>{ani.name}</td>
-              <td>{ani.trait}</td>
-              <td>{ani.species}</td>
-              <td>{ani.age}</td>
-            </tr>
+            <Animal name={ani.name} trait={ani.trait} species={ani.species} age={ani.age} key={ani.name} />
           ))}
         </tbody>
       </table>
