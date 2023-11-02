@@ -31,6 +31,7 @@ function App() {
       <table>
         <thead>
           <tr>
+            <th>Favourite</th>
             <th>
               <button onClick={() => setSortColumn("name")}>Name</button>
             </th>
